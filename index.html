@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Interactive Web Page</h1>
+      <nav>
+        <a href="#form-section">Form</a>
+        <a href="#counter-section">Counter</a>
+        <a href="#toggle-section">Toggle Content</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Form Section -->
+      <section id="form-section">
+        <h2>Custom Form</h2>
+        <form id="myForm">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter username"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+
+          <button type="submit">Submit</button>
+          <p id="formMessage"></p>
+        </form>
+      </section>
+
+      <!-- Counter Section -->
+      <section id="counter-section">
+        <h2>Click Counter</h2>
+        <p>Button clicked: <span id="count">0</span> times</p>
+        <button id="countBtn">Click Me!</button>
+      </section>
+
+      <!-- Toggle Section -->
+      <section id="toggle-section">
+        <h2>Toggle Hidden Content</h2>
+        <button id="toggleBtn">Show/Hide Content</button>
+        <p id="hiddenContent" style="display: none">
+          🎉 Surprise! You found me!
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 My Interactive Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
